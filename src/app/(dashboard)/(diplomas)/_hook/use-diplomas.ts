@@ -1,6 +1,5 @@
 import { useInfiniteQuery } from "@tanstack/react-query";
-import  Diploma  from "@/lib/types/diploma";
-import getDiplomasService from "@/lib/apis/diplomas.api";
+import getDiplomasService from "@/lib/apis/get-diplomas.api";
 
 export default function useDiplomas() {
     // retrieve diplomas

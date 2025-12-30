@@ -1,24 +1,26 @@
-"use client"
+"use client";
 
-import { PieChart, Pie, Cell, Label } from "recharts"
+import { PieChart, Pie, Cell, Label } from "recharts";
 
 type TimerProps = {
-  value: number   
-  total: number   
-}
+  value: number;
+  total: number;
+};
 
 export default function TimerDonut({ value, total }: TimerProps) {
-  const percent = Math.min((value / total) * 100, 100)
+  const percent = Math.min((value / total) * 100, 100);
 
   const data = [
     { name: "done", value: percent },
     { name: "rest", value: 100 - percent },
-  ]
+  ];
 
-   const formatTime = (seconds: number): string => {
+  const formatTime = (seconds: number): string => {
     const minutes = Math.floor(seconds / 60);
     const remainingSeconds = seconds % 60;
-    return `${minutes.toString().padStart(2, '0')}:${remainingSeconds.toString().padStart(2, '0')}`;
+    return `${minutes.toString().padStart(2, "0")}:${remainingSeconds
+      .toString()
+      .padStart(2, "0")}`;
   };
 
   return (
@@ -37,7 +39,6 @@ export default function TimerDonut({ value, total }: TimerProps) {
         >
           <Cell fill="#2563eb" /> {/* blue-600 */}
           <Cell fill="#dbeafe" /> {/* blue-100 */}
-
           <Label
             position="center"
             content={() => (
@@ -55,5 +56,5 @@ export default function TimerDonut({ value, total }: TimerProps) {
         </Pie>
       </PieChart>
     </div>
-  )
+  );
 }

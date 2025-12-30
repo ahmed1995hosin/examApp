@@ -1,5 +1,5 @@
 import { useQuery } from "@tanstack/react-query";
-import getQuestionsByIdService from "@/lib/apis/questions.api";
+import getQuestionsByIdService from "@/lib/apis/get-questions.api";
 import { useExam } from "./../_components/providers/exam-provider";
 import { useEffect } from "react";
 

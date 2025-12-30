@@ -23,12 +23,12 @@ export default function HeaderBreadcrumb() {
   const isAccountPage = segments[0] === "account";
 
   const breadcrumbs = isAccountPage
-  ? ["Account"]
-  : segments[0] === "exams"
-  ? ["Exams"]
-  : segments[0] === "exam"
-  ? ["Exams", segments[1].split("-").join(" "), "Questions"]
-  : [];
+    ? ["Account"]
+    : segments[0] === "exams"
+    ? ["Exams"]
+    : segments[0] === "exam"
+    ? ["Exams", segments[1].split("-").join(" "), "Questions"]
+    : [];
 
   return (
     <div className="bg-white p-4 text-sm">

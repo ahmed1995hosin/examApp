@@ -1,5 +1,5 @@
 import { useInfiniteQuery } from "@tanstack/react-query";
-import getExamsService from "@/lib/apis/exams.api";
+import getExamsService from "@/lib/apis/get-exams.api";
 
 export default function useExams(subjectId:string) {
    
