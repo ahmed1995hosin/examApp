@@ -6,11 +6,6 @@ import OtpForm from "./_components/otp-form";
 import ResetPasswordForm from "./_components/reset-password.form";
 import Link from "next/link";
 
-// metadata
-export const metadata = {
-    title: "Forget Password Exam App",
-    description: "Forget Password to start your exam journey",
-}
 export default function ForgetPassword() {
 
     // usecontext forget provider

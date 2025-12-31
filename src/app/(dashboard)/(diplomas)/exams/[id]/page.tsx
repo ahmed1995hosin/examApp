@@ -1,5 +1,5 @@
 import { BookOpenCheck } from "lucide-react";
-import TitleHeader from "@/app/(dashboard)/components/title-header";
+import TitleHeader from "@/app/(dashboard)/_components/title-header";
 import ExamsList from "../../_components/exams-list";
 import { log } from "console";
 

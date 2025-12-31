@@ -1,4 +1,3 @@
-"use client";
 
 import RegisterForm from "./_components/register-form";
 import Link from "next/link";
@@ -8,6 +7,7 @@ export const metadata = {
   title: "Register Exam App",
   description: "Create an account to start your exam journey",
 }
+
 export default function Register() {
   return (
     <div className="flex  justify-center flex-col px-33  ">

@@ -1,5 +1,5 @@
 import { CircleQuestionMark } from "lucide-react";
-import TitleHeader from "@/app/(dashboard)/components/title-header";
+import TitleHeader from "@/app/(dashboard)/_components/title-header";
 import ExamQuestions from "../../_components/exam-questions";
 import { Metadata } from "next";
 

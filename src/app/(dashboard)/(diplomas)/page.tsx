@@ -1,4 +1,4 @@
-import TitleHeader from "./../components/title-header";
+import TitleHeader from "../_components/title-header";
 import DiplomasBlocks from "./_components/diplomas-block";
 import { GraduationCap } from "lucide-react";
 

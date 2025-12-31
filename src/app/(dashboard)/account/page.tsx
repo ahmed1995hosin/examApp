@@ -1,4 +1,4 @@
-import TitleHeader from "./../components/title-header";
+import TitleHeader from "../_components/title-header";
 import { UserRound } from "lucide-react";
 import AccountSettingContent from "./_components/account-setting-content";
 import { getServerSession, Session } from "next-auth";

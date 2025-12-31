@@ -1,5 +1,5 @@
-import Sidebar from "./components/sidebar";
-import HeaderBreadcrumb from "./components/header-breadcrumb";
+import Sidebar from "./_components/sidebar";
+import HeaderBreadcrumb from "./_components/header-breadcrumb";
 
 type Props = {
   children: React.ReactNode;
