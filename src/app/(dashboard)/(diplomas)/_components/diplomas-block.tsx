@@ -78,7 +78,6 @@ export default function DiplomasBlock() {
               key={diploma._id}
               className=" h-[448px] relative cursor-pointer overflow-hidden shadow-lg hover:shadow-xl transition-shadow"
               onClick={() => {
-                const slug = diploma.name.toLowerCase().replace(/\s+/g, "-");
                 router.push(`/exams/${diploma._id}`);
               }}
             >

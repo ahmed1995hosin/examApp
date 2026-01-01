@@ -39,7 +39,6 @@ export default function ExamQuestions({ examId }: { examId: string }) {
     answersFormated,
     duration,
     showResult,
-    setShowResult,
   } = useExam();
 
   //hook retrive questions
@@ -53,7 +52,7 @@ export default function ExamQuestions({ examId }: { examId: string }) {
     shouldUnregister: false,
   });
 
-  const { fields } = useFieldArray({
+  useFieldArray({
     control: form.control,
     name: "answers",
   });
@@ -100,7 +99,7 @@ export default function ExamQuestions({ examId }: { examId: string }) {
   // CheckQuestion
   const onSubmitCheck: SubmitHandler<AnswersFields> = async (values) => {
     CheckQuestion(values, {
-      onSuccess: (data) => {
+      onSuccess: () => {
         form.reset();
       },
     });

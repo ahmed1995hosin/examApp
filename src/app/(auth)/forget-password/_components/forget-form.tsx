@@ -28,7 +28,7 @@ export default function ForgetPasswordForm() {
   });
 
   // mutation forget password
-  const { isPending, error, forgetPassword } = useForgetPassword();
+  const { isPending, forgetPassword } = useForgetPassword();
 
   // use forgetProvider
   const { nextStep } = useForget();

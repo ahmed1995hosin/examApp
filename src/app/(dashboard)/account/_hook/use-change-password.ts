@@ -18,7 +18,7 @@ export default function useChangePassword() {
       }
       return respone;
     },
-    onSuccess: async (data) => {
+    onSuccess: async () => {
       toast.success("Your password has been updated.");
       await new Promise((resolve) => setTimeout(resolve, 2000));
       signOut({ callbackUrl: "/login" });

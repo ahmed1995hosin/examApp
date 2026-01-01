@@ -2,7 +2,6 @@
 
 import { AnswersFields } from "@/lib/schemas/answer.schema";
 import { createContext, useContext, useState, useEffect } from "react";
-import { set } from "zod";
 
 // Exam context provider type
 type ExamContextType = {

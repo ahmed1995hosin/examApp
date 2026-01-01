@@ -62,7 +62,7 @@ export default function AccountSettingForm({ user }: { user: Session | null }) {
   // submit handler
   const onSubmit: SubmitHandler<AccountFields> = (fields) => {
     updateAccount(fields, {
-      onSuccess: async (data) => {
+      onSuccess: async () => {
         toast.success("Account Profile updated successfully");
         // await update({
         //     ...data.user,

@@ -19,10 +19,7 @@ export type LoginRespone ={
 export type RegisterFields = z.infer<typeof registerSchema>;
 
 // register response
-export type RegisterRespone = {
-    // token:string,
-    // user:User['user']
-}
+export type RegisterRespone = Omit<User['user']>;
 
 // forget password fields
 export type ForgetPasswordField = z.infer<typeof forgetPasswordEmailSchema> ; // email
@@ -36,12 +33,9 @@ export type ForgetPasswordRespone = {
 export type OtpField = z.infer<typeof otpSchema>;
 
 // otp response
-export type OtpRespone = {
-}
-
+export type OtpRespone = {};
 // reset password fields
 export type ResetPasswordFields = z.infer<typeof resetPasswordSchema>;
 
 // reset password response
-export type ResetPasswordRespone = {
-}
+export type ResetPasswordRespone = {};

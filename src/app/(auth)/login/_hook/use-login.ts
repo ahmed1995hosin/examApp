@@ -16,7 +16,7 @@ export default function useLogin() {
       }
       return response;
     },
-    onSuccess: (data, variables, context) => {
+    onSuccess: () => {
       const callbackUrl =
         new URLSearchParams(window.location.search).get("callbackUrl") || "/";
       window.location.href = callbackUrl;

@@ -11,10 +11,11 @@ export default function AccountDeleteModal({
   openDeleteModal: boolean;
   setOpenDeleteModal: React.Dispatch<React.SetStateAction<boolean>>;
 }) {
-  if (!openDeleteModal) return null;
-
   // use useDeleteAccount
   const { isPending, deleteAccount } = useDeleteAccount();
+
+  if (!openDeleteModal) return null;
+
   return (
     <div className="fixed top-0 left-0 bottom-0 w-screen h- bg-black bg-opacity-50 backdrop-blur-[4px] flex items-center justify-center">
       <div className="">
@@ -61,7 +62,7 @@ export default function AccountDeleteModal({
             onClick={() =>
               deleteAccount(undefined, {
                 // success
-                onSuccess: async (data) => {
+                onSuccess: async () => {
                   toast.success("Account deleted successfully");
                   await new Promise((resolve) => setTimeout(resolve, 2000));
                   setOpenDeleteModal(false);

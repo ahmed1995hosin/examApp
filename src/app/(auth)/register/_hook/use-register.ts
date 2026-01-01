@@ -17,7 +17,7 @@ export default function useRegister() {
       }
       return payload;
     },
-    onSuccess: (data, variables, context) => {
+    onSuccess: () => {
       router.push("/login");
     },
   });

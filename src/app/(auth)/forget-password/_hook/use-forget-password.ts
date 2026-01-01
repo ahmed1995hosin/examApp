@@ -17,7 +17,7 @@ export default function useForgetPassword() {
       }
       return respone;
     },
-    onSuccess: (data, variables, context) => {
+    onSuccess: (data, variables) => {
       // set email
       setEmail(variables.email);
       // start timer

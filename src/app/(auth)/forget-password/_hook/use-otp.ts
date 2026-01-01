@@ -18,7 +18,7 @@ export default function useOtp() {
       return respone;
     },
 
-    onSuccess: (data, variables, context) => {
+    onSuccess: () => {
       toast.success("OTP verified successfully");
       nextStep();
     },

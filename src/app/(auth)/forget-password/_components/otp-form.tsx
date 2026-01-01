@@ -30,7 +30,7 @@ export default function OtpForm() {
   const { prevStep, email, time } = useForget();
 
   //  use otp mutation
-  const { isPending, error, verifyOtp } = useOtp();
+  const { isPending, verifyOtp } = useOtp();
 
   // use forgetPassword mutation
   const {

@@ -6,8 +6,8 @@ export async function GET(req: NextRequest) {
   // get params
   const searchParams = req.nextUrl.searchParams;
   const subjectId = searchParams.get("subjectId");
-  const page = searchParams.get("page") || 1;
-  const limit = searchParams.get("limit") || 6;
+  // const page = searchParams.get("page") || 1;
+  // const limit = searchParams.get("limit") || 6;
 
   if (!subjectId) {
     return NextResponse.json(

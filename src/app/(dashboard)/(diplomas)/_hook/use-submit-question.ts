@@ -34,7 +34,7 @@ export default function useSubmitQuestion() {
       }
       return payload;
     },
-    onSuccess: (data) => {
+    onSuccess: () => {
       toast.success("Question submitted successfully");
       setShowResult(true);
       setCurrentIndex(questionsLength - 1);

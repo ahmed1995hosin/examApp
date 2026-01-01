@@ -22,7 +22,7 @@ export default async function ChangePasswordService(
     },
     body: JSON.stringify(fields),
   });
-  const payload = await response.json();
+  const payload: APIResponse<ChangePasswordResponse> = await response.json();
   console.log(payload);
   return payload;
 }

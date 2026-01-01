@@ -24,13 +24,13 @@ export default function useResetPassword() {
       }
       return respone;
     },
-    onSuccess: (data, variables, context) => {
+    onSuccess: () => {
       // toast
       toast.success("Your Password reset successfully");
       // redirect
       router.push("/login");
     },
-    onError: (error, variables, context) => {
+    onError: (error) => {
       // toast
       toast.error(error.message);
       // previous step

@@ -1,4 +1,4 @@
-import z, { email } from "zod";
+import z from "zod";
 
 // role User
 const roleUser = {
@@ -7,11 +7,11 @@ const roleUser = {
     'EDITOR': 'editor'
 } as const
 
-const role= z.object({
+const roleSchema = z.object({
     role:z.enum(roleUser)
 })
 
-export type RoleUser=z.infer<typeof role>
+export type RoleUser=z.infer<typeof roleSchema>
 
 // loginSchema 
 export const loginSchema = z.object({

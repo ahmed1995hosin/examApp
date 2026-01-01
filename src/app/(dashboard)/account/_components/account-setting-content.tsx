@@ -1,10 +1,9 @@
 "use client";
 
-import { signOut, useSession } from "next-auth/react";
+import { signOut } from "next-auth/react";
 import { CircleUserRound, Lock, LogOut } from "lucide-react";
 import { useState } from "react";
 import { Session } from "next-auth";
-import Account from "../page";
 import AccountSettingForm from "./account-setting-form";
 import AccountChangePasswordForm from "./account-changepassword-form";
 
